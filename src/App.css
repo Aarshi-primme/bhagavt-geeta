@@ -1,0 +1,16 @@
+/* Ensure the entire page has a background */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2e, #6a0572); /* Full background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* If using a container div in App.jsx */
+.app-container {
+  min-height: 100vh; /* Ensure it fills the full height */
+  display: flex;
+  flex-direction: column;
+}
